@@ -1,0 +1,64 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+aside {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+  
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+span {
+    color: white;
+    font-size: 4em;
+    padding: 50px;
+    cursor: grab;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+span:hover {
+    color: #FF6A4A;
+}
+
+.fas {
+    padding: 25px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+    padding: 20px;
+}
+
+section .img {
+    max-width: 400px;
+    max-height: 400px;
+    padding-top: 50px;
+    padding-right: 200px;
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+    border: 25px ridge rgb(114, 60, 3);
+}
