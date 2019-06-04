@@ -1,0 +1,29 @@
+{
+  "name": "shawnscott.us",
+  "version": "1.0.0",
+  "description": "My personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development",
+    "sass": "sass --watch css:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BadassBison/shawnscott.us.git"
+  },
+  "keywords": [
+    "Shawn",
+    "Scott"
+  ],
+  "author": "Shawn Scott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BadassBison/shawnscott.us/issues"
+  },
+  "homepage": "https://github.com/BadassBison/shawnscott.us#readme",
+  "dependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
