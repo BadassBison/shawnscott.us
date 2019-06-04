@@ -46,19 +46,21 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    font-size: 24px;
+    font-size: 2vw;
     padding: 20px;
 }
 
 section .img {
     max-width: 400px;
+    width: 25vw;
     max-height: 400px;
-    padding-top: 50px;
-    padding-right: 200px;
+    height: 25vw;
+    padding-top: 5vw;
+    padding-right: 18vw;
 }
 
 section img {
     width: 100%;
     height: 100%;
-    border: 25px ridge rgb(114, 60, 3);
+    border: 2vw ridge rgb(114, 60, 3);
 }

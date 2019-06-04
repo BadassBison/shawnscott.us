@@ -7,59 +7,60 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
-    <script src="main.js"></script>
+    <script src="dist/main.js"></script>
     <script src="src/blotter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
 </head>
 <body>
-    <video autoplay muted loop id="myVideo">
-        <source src="assets/beach.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-
-    <section>
-        <p>"Daddy, Dreamer, Developer..."</p>
-        <div class="img"><img src="assets/family.jpg" alt="My Family"></div>
-    </section>
     
-    <aside>
-        <a href="#"><span><i class="fas fa-chevron-circle-left"></i>About</span></a>
-        <a href="#"><span>Projects<i class="fas fa-chevron-circle-right"></i></span></a>
-    </aside>
-
+    <main id="root"></main>
     
     <script>
         
         // const swup = new Swup();
 
-        let text = new Blotter.Text("Shawn Scott", {
-            family: 'Montserrat',
-            size: innerWidth/12,
-            fill: "#000",
-            paddingLeft: 80,
-            paddingRight: 80,
-            paddingTop: 50,
-            paddingBottom: 80,
-        })
+        const nameAnimation = () => {
+            let canvas = document.getElementsByTagName("canvas")[0];
+            if (canvas) canvas.remove();
 
-        let material = new Blotter.RollingDistortMaterial();
-        material.uniforms.uSineDistortSpread.value = .3
-        material.uniforms.uSineDistortCycleCount.value = 0
-        material.uniforms.uSineDistortAmplitude.value = .6
-        material.uniforms.uNoiseDistortVolatility.value = 11
-        material.uniforms.uNoiseDistortAmplitude.value = .01
-        material.uniforms.uRotation.value = 210
-        material.uniforms.uSpeed.value = .11
+            let text = new Blotter.Text("Shawn Scott", {
+                family: 'Montserrat',
+                size: innerWidth/12,
+                fill: "#000",
+                paddingLeft: 80,
+                paddingRight: 80,
+                paddingTop: 50,
+                paddingBottom: 80,
+            })
 
-        let blotter = new Blotter(material, {
-            texts: text
-        })
+            let material = new Blotter.RollingDistortMaterial();
+            material.uniforms.uSineDistortSpread.value = .3
+            material.uniforms.uSineDistortCycleCount.value = 0
+            material.uniforms.uSineDistortAmplitude.value = .6
+            material.uniforms.uNoiseDistortVolatility.value = 11
+            material.uniforms.uNoiseDistortAmplitude.value = .01
+            material.uniforms.uRotation.value = 210
+            material.uniforms.uSpeed.value = .11
 
-        let scope = blotter.forText(text);
+            let blotter = new Blotter(material, {
+                texts: text
+            })
 
-        scope.appendTo(document.body);
+            let scope = blotter.forText(text);
 
+            scope.appendTo(document.body);
+        }
+
+        const throttle = (method, scope) => {
+            clearTimeout(method._tId);
+            method._tId = setTimeout(function(){
+                method.call(scope);
+            }, 400);
+        };
+        
+        window.onload = () => nameAnimation();
+        window.onresize = () => throttle(nameAnimation, window);
     </script>
 </body>
 </html>
