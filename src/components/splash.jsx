@@ -11,14 +11,14 @@ class Splash extends React.Component {
                     Your browser does not support HTML5 video.
                 </video>
 
-                <section>
+                <section className="splashSection">
                     <p>"Daddy, Dreamer, Developer..."</p>
                     <div className="img"><img src="assets/family.jpg" alt="My Family" /></div>
                 </section>
 
                 <aside>
-                    <Link to="/about"><span><i className="fas fa-chevron-circle-left"></i>About</span></Link>
-                    <Link to="/projects"><span>Projects<i className="fas fa-chevron-circle-right"></i></span></Link>
+                    <Link to="/about"><span className="links"><i className="fas fa-chevron-circle-left"></i>About</span></Link>
+                    <Link to="/projects"><span className="links">Projects<i className="fas fa-chevron-circle-right"></i></span></Link>
                 </aside>
             </>
         )

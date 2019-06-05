@@ -2,7 +2,13 @@ html,
 body {
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0; 
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+h1 {
+    margin-bottom: 40px;
 }
 
 aside {
@@ -10,12 +16,26 @@ aside {
     align-items: flex-end;
     justify-content: space-between;
     position: absolute;
+    top: 0;
     width: 100%;
     height: 90%;
+    box-sizing: border-box;
+}
+
+.aboutAside {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
 }
   
 #myVideo {
     position: fixed;
+    float: left;
     right: 0;
     bottom: 0;
     min-width: 100%; 
@@ -23,16 +43,16 @@ aside {
     z-index: -1;
 }
 
-span {
+.links {
     color: white;
-    font-size: 60px;
-    padding: 50px;
+    font-size: 6vw;
+    padding: 6vw;
     cursor: grab;
     -webkit-transition: color 1s;
     transition: color 1s;
 }
 
-span:hover {
+.links:hover {
     color: #FF6A4A;
 }
 
@@ -40,7 +60,7 @@ span:hover {
     padding: 25px;
 }
 
-section {
+.splashSection {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -48,19 +68,78 @@ section {
     height: 100%;
     font-size: 2vw;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 section .img {
-    max-width: 400px;
+    max-width: 500px;
     width: 25vw;
-    max-height: 400px;
+    max-height: 500px;
     height: 25vw;
     padding-top: 5vw;
-    padding-right: 18vw;
+    padding-right: 14vw;
 }
 
 section img {
     width: 100%;
     height: 100%;
     border: 2vw ridge rgb(114, 60, 3);
+}
+
+a {
+    text-decoration: none;
+}
+
+.pimg {
+    position: relative;
+    opacity: .7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img1 {
+    background-image: url('../assets/img1.jpg');
+    min-height: 100%;
+}
+.img2 {
+    background-image: url('../assets/img2.jpg');
+    min-height: 450px;
+}
+.img3 {
+    background-image: url('../assets/img3.jpg');
+    min-height: 450px;
+}
+.img4 {
+    background-image: url('../assets/img4.jpg');
+    min-height: 450px;
+}
+.img5 {
+    background-image: url('../assets/img5.jpg');
+    min-height: 450px;
+}
+
+.ptext {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    font-size: 3vw;
+    padding: 3vw;
+    cursor: grab;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+.border:hover {
+    color: #FF6A4A;
 }
