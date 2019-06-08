@@ -3,7 +3,64 @@ import { Link } from 'react-router-dom';
 
 class Splash extends React.Component {
 
+    constructor(props){
+        super(props);
+        this.nameAnimation = this.nameAnimation.bind(this);
+    }
+
+    nameAnimation() {
+        let canvas = document.getElementsByTagName("canvas")[0];
+        if (canvas) canvas.remove();
+
+        let text = new Blotter.Text("Shawn Scott", {
+            family: 'Montserrat',
+            size: innerWidth/12,
+            fill: "#000",
+            paddingLeft: 80,
+            paddingRight: 80,
+            paddingTop: 50,
+            paddingBottom: 80,
+        })
+
+        let material = new Blotter.RollingDistortMaterial();
+        material.uniforms.uSineDistortSpread.value = .3
+        material.uniforms.uSineDistortCycleCount.value = 0
+        material.uniforms.uSineDistortAmplitude.value = .6
+        material.uniforms.uNoiseDistortVolatility.value = 11
+        material.uniforms.uNoiseDistortAmplitude.value = .01
+        material.uniforms.uRotation.value = 210
+        material.uniforms.uSpeed.value = .11
+
+        let blotter = new Blotter(material, {
+            texts: text
+        })
+
+        let scope = blotter.forText(text);
+
+        scope.appendTo(document.body);
+    }
+    
+    componentDidMount(){
+        this.nameAnimation();
+    }
+
+    componentWillUnmount(){
+        let canvas = document.getElementsByTagName("canvas")[0];
+        if (canvas) canvas.remove();
+    }
+
     render() { 
+        
+        const throttle = (method, scope) => {
+            clearTimeout(method._tId);
+            method._tId = setTimeout(function(){
+                method.call(scope);
+            }, 400);
+        };
+        
+        // window.onload = () => nameAnimation();
+        window.onresize = () => throttle(this.nameAnimation, window);
+        
         return (
             <>
                 <video autoPlay muted loop id="myVideo">
@@ -20,6 +77,7 @@ class Splash extends React.Component {
                     <Link to="/about"><span className="links"><i className="fas fa-chevron-circle-left"></i>About</span></Link>
                     <Link to="/projects"><span className="links">Projects<i className="fas fa-chevron-circle-right"></i></span></Link>
                 </aside>
+
             </>
         )
     }

@@ -5,7 +5,7 @@
   "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch --mode=development",
+    "start": "webpack --watch --mode=development & sass --watch css:css & simplehttpserver",
     "sass": "sass --watch css:css"
   },
   "repository": {
@@ -29,7 +29,9 @@
     "babel-loader": "^8.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
     "react-router-dom": "^5.0.0",
+    "react-transition-group": "^4.1.0",
     "simplehttpserver": "^0.3.0",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
