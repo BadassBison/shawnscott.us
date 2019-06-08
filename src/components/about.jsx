@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 class About extends React.Component {
 
     render() { 
+        
         return (
             <>
                 <div className="img1 pimg">
                     <div className="ptext">
-                        <span className="border">
+                        <span className="border about-head">
                             <h1>Shawn Scott</h1>
                             <h2>Software Engineer</h2>
-                            <img src="./assets/profile.jpg" alt="My daughter and I photo"/>
                         </span>
                     </div>
                 </div>

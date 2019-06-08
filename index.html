@@ -10,57 +10,10 @@
     <script src="dist/main.js"></script>
     <script src="src/blotter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
-    <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
 </head>
 <body>
     
     <main id="root"></main>
     
-    <script>
-        
-        // const swup = new Swup();
-
-        const nameAnimation = () => {
-            let canvas = document.getElementsByTagName("canvas")[0];
-            if (canvas) canvas.remove();
-
-            let text = new Blotter.Text("Shawn Scott", {
-                family: 'Montserrat',
-                size: innerWidth/12,
-                fill: "#000",
-                paddingLeft: 80,
-                paddingRight: 80,
-                paddingTop: 50,
-                paddingBottom: 80,
-            })
-
-            let material = new Blotter.RollingDistortMaterial();
-            material.uniforms.uSineDistortSpread.value = .3
-            material.uniforms.uSineDistortCycleCount.value = 0
-            material.uniforms.uSineDistortAmplitude.value = .6
-            material.uniforms.uNoiseDistortVolatility.value = 11
-            material.uniforms.uNoiseDistortAmplitude.value = .01
-            material.uniforms.uRotation.value = 210
-            material.uniforms.uSpeed.value = .11
-
-            let blotter = new Blotter(material, {
-                texts: text
-            })
-
-            let scope = blotter.forText(text);
-
-            scope.appendTo(document.body);
-        }
-
-        const throttle = (method, scope) => {
-            clearTimeout(method._tId);
-            method._tId = setTimeout(function(){
-                method.call(scope);
-            }, 400);
-        };
-        
-        window.onload = () => nameAnimation();
-        window.onresize = () => throttle(nameAnimation, window);
-    </script>
 </body>
 </html>
