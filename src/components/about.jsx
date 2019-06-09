@@ -17,7 +17,8 @@ class About extends React.Component {
                 </div>
 
                 <aside className="aboutAside">
-                    <Link to="/projects"><span className="links">Projects<i className="fas fa-chevron-circle-right"></i></span></Link>
+                    <Link to="/projects"><span className="links"><i className="fas fa-chevron-circle-left"></i>Projects</span></Link>
+                    <Link to="/"><span className="links">Home<i className="fas fa-chevron-circle-right"></i></span></Link>
                 </aside>
 
                 <section className="section section-light">

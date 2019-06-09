@@ -1,0 +1,65 @@
+aside {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box; }
+
+#myVideo {
+  position: fixed;
+  float: left;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; }
+
+.links {
+  color: white;
+  font-size: 6vw;
+  padding: 6vw;
+  cursor: grab;
+  -webkit-transition: color 1s;
+  transition: color 1s; }
+
+.links:hover {
+  color: #FF6A4A; }
+
+.fas {
+  padding: 25px; }
+
+.splashSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  font-size: 2vw;
+  padding: 20px;
+  box-sizing: border-box; }
+  .splashSection p {
+    align-self: flex-start; }
+
+section .img {
+  position: absolute;
+  top: 65%;
+  width: 75vw;
+  height: 75vw;
+  contain: content;
+  max-width: 500px;
+  max-height: 500px; }
+
+section img {
+  width: 100%;
+  height: 100%;
+  border: 10px ridge #723c03;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=splash.css.map */

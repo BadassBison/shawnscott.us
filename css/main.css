@@ -1,28 +1,7 @@
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.8em; }
-
-h1 {
-  margin-bottom: 40px; }
-
 aside {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 90%;
-  box-sizing: border-box; }
-
-.aboutAside {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
   position: absolute;
   top: 0;
   width: 100%;
@@ -54,29 +33,53 @@ aside {
 
 .splashSection {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 30%;
   font-size: 2vw;
   padding: 20px;
   box-sizing: border-box; }
+  .splashSection p {
+    align-self: flex-start; }
 
 section .img {
+  position: absolute;
+  top: 65%;
+  width: 75vw;
+  height: 75vw;
+  contain: content;
   max-width: 500px;
-  width: 25vw;
-  max-height: 500px;
-  height: 25vw;
-  padding-top: 5vw;
-  padding-right: 14vw; }
+  max-height: 500px; }
 
 section img {
   width: 100%;
   height: 100%;
-  border: 2vw ridge #723c03; }
+  border: 10px ridge #723c03;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-family: 'Montserrat', sans-serif; }
+
+.aboutAside {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box; }
 
 .pimg {
   position: relative;
@@ -108,14 +111,14 @@ a {
 
 .ptext {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   box-sizing: border-box; }
 
 .border {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   box-sizing: border-box;
   color: white;
   font-size: 3vw;
@@ -127,12 +130,16 @@ a {
 .border:hover {
   color: #FF6A4A; }
 
+.about-head {
+  margin-left: 25px; }
+
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
   .projects .project {
-    margin: 25px; }
+    margin: 25px;
+    flex: 1; }
   .projects a:hover {
     color: red; }
 

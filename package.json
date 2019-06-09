@@ -4,8 +4,9 @@
   "description": "My personal site",
   "main": "index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch --mode=development & sass --watch css:css & simplehttpserver",
+    "start": "webpack --watch --mode=development",
+    "server": "simplehttpserver",
+    "s": "simplehttpserver",
     "sass": "sass --watch css:css"
   },
   "repository": {
