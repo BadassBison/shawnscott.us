@@ -10,7 +10,7 @@ import Footer from './footer';
 
 class Projects extends React.Component {
 
-    makeGif(e, ext) {
+    toggleGif(e, ext) {
         let src = e.target.name;
         e.target.src = `assets/${src}${ext}`;
     }
@@ -18,8 +18,8 @@ class Projects extends React.Component {
     componentDidMount() {
         let imgs = document.querySelectorAll("img");
         imgs.forEach(img => {
-            img.addEventListener("mouseover", e => this.makeGif(e, ".gif"));
-            img.addEventListener("mouseout", e => this.makeGif(e, ".png"))
+            img.addEventListener("mouseover", e => this.toggleGif(e, ".gif"));
+            img.addEventListener("mouseout", e => this.toggleGif(e, ".png"))
         })
     }
 
