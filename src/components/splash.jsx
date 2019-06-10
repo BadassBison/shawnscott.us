@@ -59,8 +59,8 @@ class Splash extends React.Component {
     }
 
     componentWillUnmount(){
-        let canvas = document.getElementsByTagName("canvas")[0];
-        if (canvas) canvas.remove();
+        let canvas = document.querySelectorAll("canvas");
+        if(canvas) canvas.forEach(el => el.remove());
     }
 
     render() { 

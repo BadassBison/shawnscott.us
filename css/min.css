@@ -17,4 +17,37 @@ section .img {
 .links {
   padding: 0; }
 
+.projects .project {
+  flex-wrap: wrap;
+  width: 100vw; }
+  .projects .project img {
+    width: 100%;
+    height: inherit;
+    max-width: 640px;
+    max-height: 320px; }
+
+.proj-img1 {
+  min-height: 250; }
+
+.proj-imgs {
+  display: none; }
+
+.projectAside {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 5;
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 28px;
+  line-height: 10px; }
+
+h2 {
+  font-size: 24px; }
+
 /*# sourceMappingURL=min.css.map */

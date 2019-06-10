@@ -1,4 +1,5 @@
 @import 'splash';
+@import 'projects';
 html,
 body {
     width: 100%;
@@ -79,18 +80,3 @@ h1 {
 }
 
 .about-head {margin-left: 25px;}
-
-.projects {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .project {
-        margin: 25px;
-        flex: 1;
-    }
-
-    a:hover { color: red; }
-
-}

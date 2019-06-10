@@ -19,8 +19,8 @@ aside {
 
 .links {
   color: white;
-  font-size: 6vw;
-  padding: 6vw;
+  font-size: 4vw;
+  padding: 0 6vw;
   cursor: grab;
   -webkit-transition: color 1s;
   transition: color 1s; }
@@ -61,6 +61,52 @@ section img {
 
 a {
   text-decoration: none; }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;
+    contain: content;
+    margin-top: 15px; }
+    .projects .project img {
+      width: 100%;
+      height: 25vw;
+      max-width: 640px;
+      max-height: 320px; }
+  .projects a:hover {
+    color: red; }
+
+.project-head {
+  margin-left: 70px; }
+  .project-head h2 {
+    margin-top: 0; }
+
+.proj-img1 {
+  background: #333;
+  min-height: 50%;
+  position: relative; }
+
+.proj-imgs {
+  background-image: url("../assets/img3.jpg");
+  min-height: 100px;
+  margin-top: 20px; }
+
+.projectAside {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 5;
+  box-sizing: border-box; }
 
 html,
 body {
@@ -132,15 +178,5 @@ body {
 
 .about-head {
   margin-left: 25px; }
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .projects .project {
-    margin: 25px;
-    flex: 1; }
-  .projects a:hover {
-    color: red; }
 
 /*# sourceMappingURL=main.css.map */
