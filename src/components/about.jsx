@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Section1 from './sections/section1';
 import Section2 from './sections/section2';
+import Section3 from './sections/section3';
+import Section4 from './sections/section4';
+import Footer from './footer';
 
 class About extends React.Component {
 
@@ -44,13 +47,7 @@ class About extends React.Component {
                     </div>
                 </div>
 
-                <section className="section section-dark">
-                    <h2>Section three</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aspernatur doloribus recusandae quia! Voluptate odit illo exercitationem animi vel dolores sed quaerat, eos ullam, blanditiis et in veritatis doloremque odio.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aspernatur doloribus recusandae quia! Voluptate odit illo exercitationem animi vel dolores sed quaerat, eos ullam, blanditiis et in veritatis doloremque odio.
-                    </p>
-                </section>
+                <Section3 />
 
                 <div className="img4 pimg">
                     <div className="ptext">
@@ -60,14 +57,7 @@ class About extends React.Component {
                     </div>
                 </div>
 
-                <section className="section section-dark">
-                    <h2>Section four</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aspernatur doloribus recusandae quia! Voluptate odit illo exercitationem animi vel dolores sed quaerat, eos ullam, blanditiis et in veritatis doloremque odio.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aspernatur doloribus recusandae quia! Voluptate odit illo exercitationem animi vel dolores sed quaerat, eos ullam, blanditiis et in veritatis doloremque odio.
-                        
-                    </p>
-                </section>
+                <Section4 />
 
                 <div className="img5 pimg">
                     <div className="ptext">
@@ -77,16 +67,8 @@ class About extends React.Component {
                     </div>
                 </div>
 
-                <section className="section section-light">
-                    <h2>Section five</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aspernatur doloribus recusandae quia! Voluptate odit illo exercitationem animi vel dolores sed quaerat, eos ullam, blanditiis et in veritatis doloremque odio.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aspernatur doloribus recusandae quia! Voluptate odit illo exercitationem animi vel dolores sed quaerat, eos ullam, blanditiis et in veritatis doloremque odio.
-                        
-                    </p>
-                </section>
+                <Footer />
 
-                
             </>
         )
     }
