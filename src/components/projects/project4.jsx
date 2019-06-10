@@ -5,7 +5,7 @@ const Project = () => {
             <div className="project">
                 <h2>Dungeon Smash - <a href="https://github.com/BadassBison/Dungeon-Smash" target="_blank">Github</a></h2>
                 <a href="https://badassbison.github.io/Dungeon-Smash/" target="_blank">
-                    <img src="assets/dungeonSmash.png" alt="Dungeon Smash"/>
+                    <img src="assets/dungeonSmash.png" name="dungeonSmash" alt="Dungeon Smash"/>
                 </a>
             </div>
     )

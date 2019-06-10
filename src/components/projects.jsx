@@ -10,10 +10,8 @@ import Project6 from './projects/project6';
 class Projects extends React.Component {
 
     makeGif(e, ext) {
-        let src = e.target.src;
-        console.log(e.target);
-        e.target.src = src.split("."
-        )[0] + ext;
+        let src = e.target.name;
+        e.target.src = `assets/${src}${ext}`;
     }
 
     componentDidMount() {
