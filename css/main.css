@@ -73,7 +73,8 @@ a {
     width: 50%;
     box-sizing: border-box;
     contain: content;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 10px; }
     .projects .project img {
       width: 100%;
       height: 25vw;
@@ -110,6 +111,40 @@ a {
 
 .section {
   margin: 20px; }
+
+.footer {
+  color: white;
+  background: #333;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box; }
+  .footer h3 {
+    color: lightblue;
+    text-decoration: underline;
+    margin-top: 10px; }
+  .footer p {
+    margin: 0; }
+  .footer a {
+    color: white; }
+  .footer a:hover {
+    color: burlywood; }
+  .footer .footer3 {
+    display: flex;
+    flex-direction: column; }
+  .footer .footer2 {
+    display: flex;
+    flex-direction: column; }
+  .footer .footer1 {
+    display: flex;
+    flex-direction: column; }
+    .footer .footer1 p {
+      display: block; }
+  .footer .footer4 {
+    display: flex;
+    align-items: flex-end; }
 
 .skill-wrapper {
   display: flex;
@@ -156,15 +191,6 @@ a {
       bottom: 20px;
       transform: rotate(45deg); }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.8em;
-  font-family: 'Montserrat', sans-serif; }
-
 .aboutAside {
   display: flex;
   align-items: flex-end;
@@ -201,7 +227,7 @@ body {
 
 .img5 {
   background-image: url("../assets/img5.jpg");
-  min-height: 450px; }
+  min-height: 100%; }
 
 .ptext {
   display: flex;
@@ -226,5 +252,14 @@ body {
 
 .about-head {
   margin-left: 25px; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-family: 'Montserrat', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

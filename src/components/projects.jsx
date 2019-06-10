@@ -6,6 +6,7 @@ import Project3 from './projects/project3';
 import Project4 from './projects/project4';
 import Project5 from './projects/project5';
 import Project6 from './projects/project6';
+import Footer from './footer';
 
 class Projects extends React.Component {
 
@@ -48,6 +49,8 @@ class Projects extends React.Component {
                     <Project5 />
                     <Project6 />
                 </div> 
+
+                <Footer />
             </>
         )
     }

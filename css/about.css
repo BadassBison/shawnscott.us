@@ -1,6 +1,40 @@
 .section {
   margin: 20px; }
 
+.footer {
+  color: white;
+  background: #333;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box; }
+  .footer h3 {
+    color: lightblue;
+    text-decoration: underline;
+    margin-top: 10px; }
+  .footer p {
+    margin: 0; }
+  .footer a {
+    color: white; }
+  .footer a:hover {
+    color: burlywood; }
+  .footer .footer3 {
+    display: flex;
+    flex-direction: column; }
+  .footer .footer2 {
+    display: flex;
+    flex-direction: column; }
+  .footer .footer1 {
+    display: flex;
+    flex-direction: column; }
+    .footer .footer1 p {
+      display: block; }
+  .footer .footer4 {
+    display: flex;
+    align-items: flex-end; }
+
 .skill-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -45,5 +79,67 @@
       border: 1px solid #ccc;
       bottom: 20px;
       transform: rotate(45deg); }
+
+.aboutAside {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box; }
+
+.pimg {
+  position: relative;
+  opacity: .7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.img1 {
+  background-image: url("../assets/img1.jpg");
+  min-height: 100%; }
+
+.img2 {
+  background-image: url("../assets/img2.jpg");
+  min-height: 450px; }
+
+.img3 {
+  background-image: url("../assets/img3.jpg");
+  min-height: 450px; }
+
+.img4 {
+  background-image: url("../assets/img4.jpg");
+  min-height: 450px; }
+
+.img5 {
+  background-image: url("../assets/img5.jpg");
+  min-height: 100%; }
+
+.ptext {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box; }
+
+.border {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  color: white;
+  font-size: 3vw;
+  padding: 3vw;
+  cursor: grab;
+  -webkit-transition: color 1s;
+  transition: color 1s; }
+
+.border:hover {
+  color: #FF6A4A; }
+
+.about-head {
+  margin-left: 25px; }
 
 /*# sourceMappingURL=about.css.map */

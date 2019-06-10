@@ -9,7 +9,8 @@
     width: 50%;
     box-sizing: border-box;
     contain: content;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 10px; }
     .projects .project img {
       width: 100%;
       height: 25vw;
