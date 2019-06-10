@@ -11,6 +11,8 @@ const Section = () => {
             <ul>
                 <li>Finished my bachelors in Accounting from Univeristy of Illinois - Springfield</li>
                 <li>Through the GI Bill I was able to complete over 200 college credits upon graduating</li>
+                <li>While finishing college I started an adventure company called On The Rocks Adventures</li>
+                <li>My company helped veterans who suffered with PTSD</li>
             </ul>
         </section>
     )
