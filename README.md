@@ -41,6 +41,8 @@ Living in San Francisco bay area is a dream come true. I add this video as a per
 
 ### Project Demo by Hover
 
+![hoverAnimation](assets/hoverAnimation.gif "Hover Animation")
+
 Upon hovering over a project you will be welcomed with a short demo gif of that project. That is done by changing the extension of that img from png to gif, vice-versa. Here is the code to make that happen.
 
 ```javascript
