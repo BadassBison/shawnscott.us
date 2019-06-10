@@ -64,6 +64,8 @@ componentDidMount() {
 
 ### Parallax Images
 
+![parallax](assets/parallax.gif "Parallax")
+
 These images are set to the background of their div, and made so the background is fixed. This gives that effect that by scrolling you are magically changing the bacground image and everything else is floating over it. Here is the CSS for that.
 
 ```css
