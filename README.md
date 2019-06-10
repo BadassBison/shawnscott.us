@@ -89,6 +89,8 @@ These images are set to the background of their div, and made so the background 
 
 ### Skills Text Box Animation
 
+![skillAnimation](assets/skillAnimation.gif "Skill Animation")
+
 This was done using only a JavaScript 'mouseover' & 'mouseout' eventhandler and the rest was CSS. These little animations are initially set to hidden and the y-location and the opacity are transitioned in over 800 milliseconds upon hover. The translateY transition is set to a cubic-bezier curve which makes it go a little past its spot, then return. Here is the one line of CSS code needed to make all of that happen.
 
 ```css
