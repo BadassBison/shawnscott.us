@@ -1,0 +1,61 @@
+.section {
+    margin: 20px;
+}
+
+.skill-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .skillImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex: 1;
+        margin: 15px;
+
+        .skillInfo {
+            position: absolute;
+            z-index: 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 3px 2px #ddd;
+            border: 1px solid #ccc;
+            background: #fff;
+            bottom: 0px;
+            opacity: 1;
+            transition: opacity 0.8s,
+                transform 0.6s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+
+            p { 
+                z-index: 5; 
+                background: #fff;
+                display: inline-block;
+                padding: 6px;
+            }
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .arrow {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: #fff;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            bottom: 20px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
