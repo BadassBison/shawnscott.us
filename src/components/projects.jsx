@@ -11,6 +11,7 @@ class Projects extends React.Component {
 
     makeGif(e, ext) {
         let src = e.target.src;
+        console.log(e.target);
         e.target.src = src.split("."
         )[0] + ext;
     }
