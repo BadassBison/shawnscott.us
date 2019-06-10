@@ -5,7 +5,7 @@ const Project = () => {
         <div className="project">
             <h2>Uncappd - <a href="https://github.com/BadassBison/Uncappd" target="_blank">Github</a></h2>
             <a href="https://uncappd.herokuapp.com/#/" target="_blank">
-                <img src="assets/uncappd.png" alt="Uncappd"/>
+                <img src="assets/uncappd.png" name="uncappd" alt="Uncappd"/>
             </a>
         </div>
     )
