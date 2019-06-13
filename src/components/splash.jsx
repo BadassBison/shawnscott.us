@@ -29,7 +29,7 @@ class Splash extends React.Component {
         let text = new Blotter.Text("Shawn Scott", {
             family: 'Montserrat',
             size: cSize,
-            fill: "#000",
+            fill: "#111",
             paddingLeft: pLeft,
             paddingRight: pRight,
             paddingTop: pTop,
@@ -55,7 +55,7 @@ class Splash extends React.Component {
     }
     
     componentDidMount(){
-        this.nameAnimation();
+        // this.nameAnimation();
     }
 
     componentWillUnmount(){
@@ -72,6 +72,7 @@ class Splash extends React.Component {
             }, 400);
         };
         
+        window.onload = () => this.nameAnimation()
         window.onresize = () => throttle(this.nameAnimation, window);
         
         return (
