@@ -55,7 +55,7 @@ class Splash extends React.Component {
     }
     
     componentDidMount(){
-        // this.nameAnimation();
+        this.nameAnimation();
     }
 
     componentWillUnmount(){
