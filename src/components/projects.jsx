@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Project1 from './projects/project1';
-import Project2 from './projects/project2';
-import Project3 from './projects/project3';
-import Project4 from './projects/project4';
-import Project5 from './projects/project5';
-import Project6 from './projects/project6';
-import Project7 from './projects/project7';
+import Project1 from './projects/uncappd';
+import Project2 from './projects/scouts_closet';
+import Project3 from './projects/maze_runner';
+import Project4 from './projects/dungeon_smash';
+import Project5 from './projects/color_game';
+import Project6 from './projects/pong';
+import Project7 from './projects/paintour';
+import Project8 from './projects/letter_game';
 import Footer from './footer';
 
 class Projects extends React.Component {
@@ -50,6 +51,7 @@ class Projects extends React.Component {
                     <Project5 />
                     <Project6 />
                     <Project7 />
+                    <Project8 />
                 </div> 
 
                 <Footer />
